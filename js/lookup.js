@@ -1,8 +1,8 @@
 var apiKey = require('./../.env').apiKey;
 
-lookUpRepos = function() {};
+lookupRepos = function() {};
 
-lookUpRepos.prototype.getlookUp = function(userName, displayRepos) {
+lookupRepos.prototype.getlookup = function(userName, displayRepos) {
   var i;
   $('#displayRepos').empty();
   $('#reposHeader').hide();
@@ -20,4 +20,4 @@ lookUpRepos.prototype.getlookUp = function(userName, displayRepos) {
   });
 };
 
-exports.lookUpReposModule = lookUpRepos;
+exports.lookupReposModule = lookupRepos;
