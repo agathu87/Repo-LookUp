@@ -1,0 +1,22 @@
+{
+  "name": "repo-lookup",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Angela Gathu <agathu87@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/agathu87/Repo-LookUp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "moment": "^2.18.1"
+  }
+}
