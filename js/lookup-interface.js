@@ -13,7 +13,7 @@ var displayRepos = function (repoName,repoDescription,creationDate) {
 
 $(document).ready(function() {
   $('#reposHeader').hide();
-  var currentlookupReposObject = new lookupRepos();
+  var currentlookupReposObject = new LookupRepos();
   $('#submitUserName').click(function() {
   var userName = $('#userName').val();
   $('#userName').val("");
