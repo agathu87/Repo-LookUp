@@ -1,23 +1,23 @@
 var apiKey = require('./../.env').apiKey;
 
-lookupRepos = function() {};
+lookup = function() {};
 
-lookupRepos.prototype.getlookup = function(userName, displayRepos) {
+lookup.prototype.getlookup = function(userName, displaylookup) {
   var i;
-  $('#displayRepos').empty();
-  $('#reposHeader').hide();
+  $('#displaylookup').empty();
+  $('#lookupHeader').hide();
   $.get('https://api.github.com/users/' + userName + '/repos?access_token=' + apiKey).then(function(response) {
     console.log(response);
     for (i = 0; i < response.length; i++) {
-      if (response[i].description===null){
-        response[i].description = 'No description in repo';
+      if (response[i].description === null) {
+        response[i].description = 'No description in lookup';
       }
-      $('#reposHeader').show();
-      displayRepos(response[i].name,response[i].description,);
+      $('#lookupHeader').show();
+      displaylookup(response[i].name, response[i].description, );
     }
   }).fail(function(error) {
     $('#display').text(error.response.message);
   });
 };
 
-exports.lookupReposModule = lookupRepos;
+exports.lookupModule = lookup;
