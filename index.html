@@ -1,35 +1,49 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
   <link rel="stylesheet" href="build/css/vendor.css">
-  <title>LookUp</title>
+  <link rel="stylesheet" href="build/css/styles.css">
+  <title>Repo-LookUp!</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="jumbotron">
-      <h1>GitHub Profiles</h1>
+    <div class="jumbo rep">
+      <h1>Repo-LookUp!</h1>
 
+
+
+
+      <section class="section3">
+
+        <form class="form-inline" id="usernameForm">
+
+          <label for="username">Enter GitHub UserName:</label>
+
+          <input id="username" type="text" placeholder="GitHub UserName" class="form-control">
+
+          <button type="submit" id="usernameButton">Search</button>
+
+        </form>
+
+      </section>
     </div>
 
-    <h3>Look-Up!</h3>
-    <h3 id="look"></h3>
+    <section class="section4" id="showUserInfo">
 
+    </section>
 
-    <form id="signup">
-      <label for="name">GitHub Username:</label>
-      <input type="name" id="name">
-      <button type="submit">Submit</button>
-    </form>
+    <section class="section5">
 
-    <ul id="solution">
+      <ol id="showRepoInfo">
 
-    </ul>
+      </ol>
+
+    </section>
   </div>
 
   <script src="build/js/vendor.min.js"></script>
   <script type="text/javascript" src="build/js/app.js"></script>
 </body>
-
-</html>

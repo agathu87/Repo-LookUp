@@ -1,7 +1,7 @@
 {
   "name": "repo-lookup",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "authors": [
     "Angela Gathu <agathu87@gmail.com>"
   ],

@@ -1,22 +1,22 @@
-var lookupRepos = require('./../js/lookup.js').lookReposModule;
+var LookUp = require('./../js/lookup.js').lookupModule;
 
 var displayName = function(user) {
-  if (user===null) {
+  if (user === null) {
     $('#display').text("The user has no name in profile");
   }
-  $('#display').text("You are viewing " + user+"'s profile.");
+  $('#display').text("You are viewing " + user + "'s profile.");
 };
 
-var displayRepos = function (repoName,repoDescription,creationDate) {
-  $('#displayRepos').append("<li><h4>"+repoName+"</h4><br>"+repoDescription+"<br></li>");
+var displayLookUp = function(lookupName, lookupDescription, creationDate) {
+  $('#displayLookUp').append("<li><h4>" + lookupName + "</h4><br>" + lookupDescription + "<br></li>");
 };
 
 $(document).ready(function() {
-  $('#reposHeader').hide();
-  var currentlookupReposObject = new lookupRepos();
+  $('#lookupHeader').hide();
+  var currentLookUpObject = new LookUp();
   $('#submitUserName').click(function() {
-  var userName = $('#userName').val();
-  $('#userName').val("");
-  currentlookupReposObject.getlookup(userName,displayRepos);
-});
+    var userName = $('#userName').val();
+    $('#userName').val("");
+    currentLookUpObject.getLookUp(userName, displayLookUp);
+  });
 });
